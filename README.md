@@ -73,18 +73,4 @@ http://localhost:3000/product/
 GET
 http://localhost:3000/supplier/
 </pre>
-Consutar por id
-<pre>
-GET
-http://localhost:3000/brain/1
-</pre>
-Consutar monitoramento que o crawler encontro 
-<pre>
-GET
-http://localhost:3000/brain/monitoramento/3
-</pre>
 
-Use front-end da aplicação
-<pre>
-git clone https://github.com/20100000/test-brain-frontend
-</pre>
