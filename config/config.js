@@ -15,7 +15,6 @@ const mySql = {
 }
 
 module.exports = {
-  constants,
   redis,
   mySql
 }

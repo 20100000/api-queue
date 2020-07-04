@@ -13,7 +13,6 @@ const _saveSupplier = async (req, res, next) => {
 const _supplierAll = async (req, res, next, model) => {
     try {
         const data = await model.getSuppliers()
-        console.log(data);
         return res.send(JSON.stringify({success: true, data: data}));
     } catch (e) {
         res.status(400);

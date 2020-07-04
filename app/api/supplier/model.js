@@ -5,7 +5,7 @@ const _getSuppliers = async () => {
     let conn = null;
     try{
         conn = await database.getConnection(true);
-        return  await database.execute(conn, queries.QSelectAllSupplier);
+        return await database.execute(conn, queries.QSelectAllSupplier);
 
     }catch (e) {
         //todo
@@ -18,7 +18,6 @@ const _getSuppliers = async () => {
 const _insertSupplier = async (supplier) => {
     let conn = null;
     try{
-        console.log('model suppliersssssssssss', supplier);
         conn = await database.getConnection(true);
         const res = await database.execute(conn, queries.QInsertSuppliers, [supplier.name, supplier.doc]);
         return res.insertId;
