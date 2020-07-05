@@ -4,7 +4,7 @@ import config from '../../config/config';
 import * as jobs from '../jobs';
 
 const queues = Object.values(jobs).map(job => ({
-  bull: new Queue(job.key, config.redis),
+  bull: new Queue(job.key, config.redis.REDIS_HOST_PORT),
   name: job.key,
   handle: job.handle,
   options: job.options,
@@ -14,7 +14,7 @@ export default {
   queues,
   add(name, data) {
     const queue = this.queues.find(queue => queue.name === name);
-    queue.options = { delay: 5000};
+    queue.options = { delay: config.redis.DELAY};
     return queue.bull.add(data, queue.options);
   },
   process() {

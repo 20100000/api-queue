@@ -1,9 +1,7 @@
-import 'dotenv/config';
 
 const redis = {
-  HOST: process.env.REDIS_HOST,
-  PORT: process.env.REDIS_PORT,
-  HOST_PORT: 'redis://127.0.0.1:6379'
+  REDIS_HOST_PORT: process.env.REDIS_URL,
+  DELAY: 5000
 }
 
 const mySql = {

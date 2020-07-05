@@ -6,11 +6,12 @@ Bull-board para monitoramento da fila<br>
 Docker com conterner redis <br/>
 NodeJs com framework Express para rotas das APIs<br/>
 npm gerenciador de pacotes </br>
-MySql banco de dados </br>
+Docker conterner MySql banco de dados </br>
+Docker-compose</br>
 <br/>
 
 <h3>Requisitos para rodar projeto</h3>
-Docker é extremamente necessário pora rodar o redis e armazenar a filas.
+Docker-compose é extremamente necessário pora rodar o redis e armazenar a filas.
 
 <h3>Passo a passo para iniciar projeto 
 <h4>1° Clone o projeto</h4> 
@@ -26,25 +27,17 @@ crie node_module com as dependências.<br/>
 </pre>
 <h4>3° Iniciar contaner com redis</h4>
 <pre>
-    docker run --name redis_go -d -p 6379:6379 -d -t redis:alpine 
+    docker-compose up
 </pre>
 
-redis_go e o nome da image, se preferir coloque o nome que quiser.<br/>
-Rode o contener na porta 6379 é a porta padrão.<br/>
-
-<h4>4° Iniciar projeto</h4>
-
-<pre>
-    npm run go
-</pre>
 <h4>5̣° Banco de dados</h4>
 Na raiz do projeto importar database brain.sql, execute mysql na porta 3306 ex: jdbc:mysql://localhost:3306/ <br>
 Em config/config.js configure database valores padrão.<br>
   HOST: '127.0.0.1',<br>
   PORT: '3606',<br>
-  PASSWORD: '',<br>
+  PASSWORD: 'root',<br>
   USER: 'root',<br>
-  DATABASE: 'brain'<br>
+  DATABASE: 'api_queue'<br>
 
 <h4>Rotas APIs</h4>
 Monitoramento da fila
@@ -53,17 +46,25 @@ GET
 http://localhost:3000/dashboard/queues
 </pre>
 
-Inserir produto para ser inserido em fila
+Inserir produto para ser processado em fila
 <pre>
 POST
 http://localhost:3000/product
 {
     "name":"Name your product",
-    "description": "Description product"
-    "suppier_id" : 1
+    "description": "Description product",
+    "supplier_id" : 1
 }
 </pre>
-
+Inserir fornecedor para ser processado em fila
+<pre>
+POST
+http://localhost:3000/supplier
+{
+    "name":"Name your product",
+    "doc": "Description product"
+}
+</pre>
 Consutar todos
 <pre>
 GET

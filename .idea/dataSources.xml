@@ -7,5 +7,17 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/api_queue</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="api_queue@docker" uuid="6b58b034-2e1c-4126-9622-7a774ef335e2">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3308/api_queue</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="teste2" uuid="e0e2ef08-0920-4653-93c2-335b9a221b87">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3308/api_queue</jdbc-url>
+    </data-source>
   </component>
 </project>
