@@ -25,7 +25,8 @@ crie node_module com as dependências.<br/>
 <pre>
     npm install
 </pre>
-<h4>3° Iniciar contaner com redis</h4>
+<h4>3° Iniciar contaners com redis, mysql e node</h4>
+já fiz tudo e só usar detalhe o banco de dados sera importado também com esse comando abaixo
 <pre>
     docker-compose up
 </pre>
