@@ -11,7 +11,7 @@ Docker-compose</br>
 <br/>
 
 <h3>Requisitos para rodar projeto</h3>
-Docker-compose é extremamente necessário pora rodar o redis e armazenar a filas.
+Docker-compose é extremamente necessário pora rodar o MySql , redis e armazenar a filas.
 
 <h3>Passo a passo para iniciar projeto 
 <h4>1° Clone o projeto</h4> 
