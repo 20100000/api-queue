@@ -18,7 +18,8 @@
     "mysql": "github:mysqljs/mysql",
     "cors": "^2.8.5",
     "node-fetch": "^2.6.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "ws": "^7.3.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.4",
