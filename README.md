@@ -5,6 +5,7 @@ Bull e redis para filas (queue)<br>
 Bull-board para monitoramento da fila<br>
 Docker com conterner redis <br/>
 NodeJs com framework Express para rotas das APIs<br/>
+WebSocket server ws<br/>
 npm gerenciador de pacotes </br>
 Docker conterner MySql banco de dados </br>
 Docker-compose</br>
