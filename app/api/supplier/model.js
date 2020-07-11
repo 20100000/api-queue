@@ -28,5 +28,20 @@ const _insertSupplier = async (supplier) => {
     }
 }
 
-module.exports.getSuppliers =_getSuppliers;
-module.exports.insertSupplier =_insertSupplier;
+const _getSupplier = async (id) => {
+    let conn = null;
+    try{
+        conn = await database.getConnection(true);
+        return await database.execute(conn, queries.QSelectSupplier,[id]);
+
+    }catch (e) {
+        //todo
+    }finally {
+        database.closeConn(conn);
+
+    }
+}
+
+module.exports.getSuppliers = _getSuppliers;
+module.exports.insertSupplier = _insertSupplier;
+module.exports.getSupplierId = _getSupplier;

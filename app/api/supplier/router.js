@@ -7,6 +7,7 @@ const router = express.Router();
 
 const controller = Controller.getController(model);
 router.get('/', controller.supplierAll);
+router.get('/:id', controller.getSupplier);
 router.post('/', controller.saveSupplier);
 
 module.exports = { path: PATH, router };

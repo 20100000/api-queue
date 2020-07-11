@@ -10,9 +10,10 @@ npm gerenciador de pacotes </br>
 Docker conterner MySql banco de dados </br>
 Docker-compose</br>
 <br/>
-
+<h3>Portas Necessárias</h3>
+MySql 3308, APP 3000, WS 7788 e REDIS 6379 
 <h3>Requisitos para rodar projeto</h3>
-Docker-compose é extremamente necessário pora rodar o MySql , redis, ws e armazenar as filas.
+Docker-compose é extremamente necessário pora rodar o MySql , Nodejs, redis, ws e armazenar as filas.
 <h3>Diagrama fluxo do projeto</h3>
 <img src="img/projetoFluxo2.PNG" width="70%"/>
 
@@ -77,5 +78,10 @@ http://localhost:3000/product/
 <pre>
 GET
 http://localhost:3000/supplier/
+</pre>
+
+<pre>
+GET
+http://localhost:3000/supplier/1
 </pre>
 
