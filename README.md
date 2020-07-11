@@ -37,7 +37,7 @@ já fiz tudo e só usar detalhe o banco de dados sera importado também com esse
 
 <h4>5̣° Banco de dados</h4>
 A base de dados vai ser executado na porta 3308 ex: jdbc:mysql://localhost:3308/ <br>
-Em docker-compose.yml configure database valores padrão.<br>
+Em docker-compose.yml variaveis de ambiente.<br>
   DB_HOST: '127.0.0.1',<br>
   DB_PORT: '3608',<br>
   DB_PASSWORD: 'root',<br>
