@@ -89,3 +89,10 @@ Use front-end da aplicação para consumir as APIs e websocket
 <pre>
 git clone https://github.com/20100000/api-queue-front.git
 </pre>
+
+Com duvida ou sugestão eu to aqui
+<pre>
+    tiago_honorio2010@hotmail.com
+    https://www.linkedin.com/in/tiago-honorio-6b5494a2/
+    
+</pre>
