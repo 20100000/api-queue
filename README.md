@@ -66,8 +66,8 @@ Inserir fornecedor para ser processado em fila
 POST
 http://localhost:3000/supplier
 {
-    "name":"Name your product",
-    "doc": "Description product"
+    "name":"Name your supplier",
+    "doc": "Description supplier"
 }
 </pre>
 Consutar todos
